@@ -1,32 +1,37 @@
 import React from "react";
-import VitwitLogo from "../assets/vitwit-logo.png";
 import MailLogo from "../assets/social-icons/mail.png";
 import YoutubeLogo from "../assets/social-icons/youtube.png";
 import TwitterLogo from "../assets/social-icons/twitter.png";
 import GithubLogo from "../assets/social-icons/github.png";
 import LinkedInLogo from "../assets/social-icons/linkedln.png";
+import VitwitLogo from "../assets/footer-vitwit-logo.png";
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="flex flex-col justify-center items-start gap-6">
-        <img className="nav__logo" src={VitwitLogo} alt="Vitwit Logo" />
-        <p className="">
-          Feel free to contact us by filling this form or you can even reach us
-          out from the social media links below.
-        </p>
+      <div className="flex justify-between">
+        <div className="flex flex-col justify-center items-start gap-6">
+          <img className="" src={VitwitLogo} alt="Vitwit Logo" />
+          <p className="text-white text-sm not-italic font-normal leading-6">
+            Feel free to contact us by filling this form or you can even reach
+            us
+            <p className="text-white text-sm not-italic font-normal leading-6">
+              out from the social media links below.
+            </p>
+          </p>
+        </div>
+        <div className="flex flex-col gap-6">
+          <div className="text-white text-xl not-italic font-bold leading-5">
+            {" "}
+            Join our community
+          </div>
+          <SocialIcons />
+        </div>
       </div>
-      <div className="flex flex-col gap-6">
-        <div className="text-white text-xl not-italic font-bold leading-5">
-          {" "}
-          Join our community
-        </div>
-        <div className="flex gap-6 ">
-          <img className="  cursor-pointer" src={MailLogo} />
-          <img className=" cursor-pointer" src={YoutubeLogo} />
-          <img className="" src={TwitterLogo} />
-          <img className="" src={GithubLogo} />
-          <img className="" src={LinkedInLogo} />
-        </div>
+      <div className="divider-line"></div>
+      <div className="flex items-center justify-center gap-6 nav-text">
+        <p className="cursor-pointer">Privacy Policy</p>
+        <p>@2023vitwit.com</p>
+        <p className="cursor-pointer">Terms of use</p>
       </div>
     </div>
   );
@@ -34,12 +39,29 @@ const Footer = () => {
 
 export default Footer;
 
-// const SocialIcon =({image, link="https://www.google.com"}) => {
-//   return (
-//     <div className='flex-center'>
-//       <Link to={link} target="_blank">
-//         <img className='' src={image} alt="" />
-//       </Link>
-//     </div>
-//   )
-// }
+const SocialIcons = () => {
+  return (
+    <div className="flex gap-6">
+      <SocialLink link="https://www.gmail.com" icon={MailLogo} />
+      <SocialLink link="https://www.youtube.com" icon={YoutubeLogo} />
+      <SocialLink link="https://www.twitter.com" icon={TwitterLogo} />
+      <SocialLink link="https://www.github.com" icon={GithubLogo} />
+      <SocialLink link="https://www.linkedin.com" icon={LinkedInLogo} />
+    </div>
+  );
+};
+
+const SocialLink = ({ link, icon }) => {
+  return (
+    <div className="contact__socials items-center flex justify-center">
+      <a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="cursor-pointer"
+      >
+        <img className="contact__socials__icon" src={icon} alt="Social Icon" />
+      </a>
+    </div>
+  );
+};
