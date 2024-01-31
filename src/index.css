@@ -44,4 +44,11 @@ body {
     @apply flex flex-col justify-center items-center gap-10 p-20;
   background: rgba(255, 255, 255, 0.06);
   }
+  .social-icon{
+    @apply w-[25px] h-[25px];
+  }
+  .social-icon-backgrnd {
+    @apply w-10 h-10 shrink-0 rounded-lg;
+    background: rgba(255, 255, 255, 0.08);
+  }
 }
