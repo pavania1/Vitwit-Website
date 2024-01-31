@@ -1,7 +1,7 @@
 import React from "react";
 import MailLogo from "../assets/social-icons/mail.png";
 import YoutubeLogo from "../assets/social-icons/youtube.png";
-import TwitterLogo from "../assets/social-icons/twitter.png";
+import SkypeLogo from "../assets/social-icons/skype.png";
 import GithubLogo from "../assets/social-icons/github.png";
 import LinkedInLogo from "../assets/social-icons/linkedln.png";
 import VitwitLogo from "../assets/footer-vitwit-logo.png";
@@ -44,7 +44,7 @@ const SocialIcons = () => {
     <div className="flex gap-6">
       <SocialLink link="https://www.gmail.com" icon={MailLogo} />
       <SocialLink link="https://www.youtube.com" icon={YoutubeLogo} />
-      <SocialLink link="https://www.twitter.com" icon={TwitterLogo} />
+      <SocialLink link="https://www.twitter.com" icon={SkypeLogo} />
       <SocialLink link="https://www.github.com" icon={GithubLogo} />
       <SocialLink link="https://www.linkedin.com" icon={LinkedInLogo} />
     </div>
