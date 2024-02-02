@@ -1,0 +1,101 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.main22 {
+  width: 100%;
+  background: linear-gradient(
+    91deg,
+    #280a33 0.63%,
+    #000 49.91%,
+    #000 62.74%,
+    #2d2753 99.19%
+  );
+}
+
+.subleftdevelop1-delegate h1 {
+  opacity: 0.8;
+  font-family: LibreFranklin;
+  font-size: 54px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.19;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+  justify-content: center;
+}
+.delegate-text {
+  height: 48px;
+  align-self: stretch;
+  flex-grow: 0;
+  opacity: 0.8;
+  font-family: LibreFranklin;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+}
+.partners-logos {
+  height: 100px;
+  align-self: stretch;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  opacity: 0.8;
+}
+.partners-logo-1 {
+  height: 100px;
+  align-self: stretch;
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  opacity: 0.8;
+}
+.bottom-text {
+  opacity: 0.8;
+  font-family: LibreFranklin;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.4;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+}
+.alert2001 {
+  /* background: rgba(255, 255, 255, 0.08); */
+  width: 80%;
+  text-align: start;
+  border-color: rgba(255, 255, 255, 0.04);
+  background: rgba(255, 255, 255, 0.04);
+  margin-bottom: 30%;
+}
+.Jack-Zampolin {
+  opacity: 0.8;
+  background-image: linear-gradient(to bottom, #2f50da 0%, #a562f7 100%);
+  font-family: LibreFranklin;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.56px;
+  text-align: right;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

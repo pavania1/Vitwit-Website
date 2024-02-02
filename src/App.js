@@ -1,5 +1,6 @@
 
 import './App.css';
+import Delegate from './components/Delegate';
 import Development from './components/Developmentservices';
 import Footer from './components/Footer';
 import Letstalk from './components/Letstalk';
@@ -11,8 +12,7 @@ import Resolute from './components/Resolute';
 function App() {
   return (
     <div className="App">
-     
-     <OurPartners />
+     <Delegate />
     </div>
   );
 }
