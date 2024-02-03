@@ -136,7 +136,7 @@ const Delegate = () => {
                         </span>
                       </div>
                     </div>
-                    <img src={Twitter} alt="Twitter" width={24} height={24}/>
+                    <img src={Twitter} alt="Twitter" width={24} height={24} />
                   </div>
                 }
                 description={

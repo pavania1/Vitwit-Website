@@ -26,11 +26,11 @@
   text-align: center;
   color: #fff;
   justify-content: center;
+  align-self: stretch;
 }
 .delegate-text {
-  height: 48px;
   align-self: stretch;
-  flex-grow: 0;
+
   opacity: 0.8;
   font-family: LibreFranklin;
   font-size: 14px;

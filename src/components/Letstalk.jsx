@@ -11,13 +11,13 @@ const Letstalk = () => {
     event.preventDefault();
   };
   return (
-    <div className="justify-between items-center p-20">
-      <div className="flex items-center justify-between">
-        <div className="flex flex-col justify-center items-start gap-4">
+    <div className="letstalk-main">
+      <div className="letstalk-head">
+        <div className="letstalk-heading">
           <div className="lets-text">
             Lets <span className="talk-text">Talk</span>
           </div>
-          <p className="text-white text-sm not-italic font-normal leading-6">
+          <p className="letstalk-para-text">
             {" "}
             Feel free to conatct us by filling this form or you can even reach
             us out <p className="">from the social media links below.</p>
@@ -26,7 +26,7 @@ const Letstalk = () => {
         </div>
         <div className="form-bg">
           <form onSubmit={handleSubmit} className=" space-y-10">
-            <div className="flex space-x-4">
+            <div className="letstalk-form">
               <div className="text-field-bg">
                 <div className="gap-2 flex">
                   <img className="" src={PersonIcon} alt="Person Icon" />

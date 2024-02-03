@@ -1,0 +1,29 @@
+.letstalk-main {
+  padding: 5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.letstalk-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.letstalk-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: flex-start;
+}
+.letstalk-para-text {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  color: #ffffff;
+}
+.letstalk-form {
+  display: flex;
+  margin-left: 1rem;
+}

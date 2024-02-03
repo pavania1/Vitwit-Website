@@ -1,18 +1,26 @@
 
 import './App.css';
-import Delegate from './components/Delegate';
 import Development from './components/Developmentservices';
-import Footer from './components/Footer';
-import Letstalk from './components/Letstalk';
+
+// import Delegate from './components/Delegate';
+// import Development from './components/Developmentservices';
+// import Footer from './components/Footer';
+import Infrastructure from './components/Infrastructure';
+import Landing from './components/Landing';
 import Navbar from './components/Navbar';
+// import Letstalk from './components/Letstalk';
+// import Navbar from './components/Navbar';
 import OurPartners from './components/OurPartners';
-import Resolute from './components/Resolute';
+// import Resolute from './components/Resolute';
 
 
 function App() {
   return (
     <div className="App">
-     <Delegate />
+      <Navbar/>
+      <Landing/>
+     <Development />
+   
     </div>
   );
 }

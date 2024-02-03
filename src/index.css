@@ -32,7 +32,7 @@ body {
     @apply w-[150px] h-[39.725px] shrink-0;
   }
   .menu-list {
-    @apply flex justify-end items-start gap-10;
+    @apply flex justify-end items-start gap-32;
   }
   .get-touch-btn {
     @apply flex justify-center items-center gap-2.5 h-10 rounded px-6 py-2 border-[0.5px] border-solid border-[#2F50DA];
@@ -119,7 +119,7 @@ body {
 
   /* Development services */
 
-  .main22 {
+  /* .main22 {
     @apply w-full;
     background: linear-gradient(
       91deg,
@@ -189,7 +189,7 @@ body {
   }
   .dot10 {
     @apply h-[27px] w-[27px] flex justify-center items-center bg-[rgba(251,250,250,0.04)] relative mt-[-63%] rounded-[50%] left-[71%];
-  }
+  } */
 
   /* OurPartners */
   .ourpartners {
