@@ -1,4 +1,4 @@
-/*  */
+
 
 * {
   margin: 0px;
@@ -79,7 +79,7 @@
   -webkit-text-fill-color: transparent;
   font-family: "Libre Franklin";
 }
-.dot1 {
+/* .dot1 {
   height: 250px;
   width: 250px;
   background: linear-gradient(169deg, #6458e7 26.53%, #9760f4 55.47%);
@@ -260,4 +260,4 @@
 }
 .figma2001 {
   justify-content: flex-start;
-}
+} */

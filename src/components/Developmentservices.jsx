@@ -1,6 +1,5 @@
 import React from "react";
 import "./Development.css";
-
 import { Alert, Space } from "antd";
 const Development = () => {
   return (
@@ -16,21 +15,10 @@ const Development = () => {
                 <span className="servicesdevelop">Services</span>
               </h1>
             </div>
-            <div>
-              <p>
-                We are a core tech company passionate about the research and
-                development of technology solutions that transform businesses
-                and people’s work styles.We are a core tech company passionate
-                about the research andWe are a core tech company passionate
-                about the research and development of technology solutions that
-                transform businesses and people’s work styles.We are a core tech
-                company passionate about the research and
-              </p>
-            </div>
 
             <div className="subleftdevelop2">
               <Space
-                className="space-alert-dev"
+                className="space-alert-dev gap-10"
                 direction="vertical"
                 style={{
                   width: "100%",
@@ -50,6 +38,12 @@ const Development = () => {
                       Network.
                     </span>
                   }
+                  style={{
+                    padding: 15,
+                    marginBottom: "10px",
+                    marginTop: "15px",
+                    width: "100%",
+                  }}
                 />
                 <Alert
                   className="alert2001"
@@ -65,6 +59,7 @@ const Development = () => {
                       Network.
                     </span>
                   }
+                  style={{ padding: 15, marginBottom: "10px", width: "100%" }}
                 />
                 <Alert
                   className="alert2001"
@@ -80,6 +75,7 @@ const Development = () => {
                       Network.
                     </span>
                   }
+                  style={{ padding: 15, marginBottom: "10px", width: "100%" }}
                 />
                 <Alert
                   className="alert2001"
@@ -95,6 +91,7 @@ const Development = () => {
                       Network.
                     </span>
                   }
+                  style={{ padding: 15, marginBottom: "10px", width: "100%" }}
                 />
               </Space>
             </div>
@@ -103,7 +100,7 @@ const Development = () => {
 
           {/* RightDevelop cantioner start */}
           <div className="RightDevelop">
-            {/* <div>
+            <div>
               <p>
                 We are a core tech company passionate about the research and
                 development of technology solutions that transform businesses
@@ -113,28 +110,30 @@ const Development = () => {
                 transform businesses and people’s work styles.We are a core tech
                 company passionate about the research and
               </p>
-            </div> */}
+            </div>
             <div className="figma2001">
-              <span className="dot1">
-                4 + <br></br>Total Networks
-              </span>
-              <span className="dot2">
-                4 + <br></br>Total Networks
-              </span>
-              <span className="dot3">
-                4 + <br></br>Total Networks
-              </span>
-              <span className="dot4">
-                4 + <br></br>Total Networks
-              </span>
-              <span className="dot5">
-                4 + <br></br>Total Networks
-              </span>
-              <span className="dot6"></span>
-              <span className="dot7"></span>
-              <span className="dot8"></span>
-              <span className="dot9"></span>
-              <span className="dot10"></span>
+              <div className="circles">
+                <span className="dot1">
+                  4 + <br></br>Total Networks
+                </span>
+                <span className="dot2">
+                  4 + <br></br>Total Networks
+                </span>
+                <span className="dot3">
+                  4 + <br></br>Total Networks
+                </span>
+                <span className="dot4">
+                  4 + <br></br>Total Networks
+                </span>
+                <span className="dot5">
+                  4 + <br></br>Total Networks
+                </span>
+                <span className="dot6"></span>
+                <span className="dot7"></span>
+                <span className="dot8"></span>
+                <span className="dot9"></span>
+                <span className="dot10"></span>
+              </div>
             </div>
           </div>
           {/*RightDevelop cantioner end */}
