@@ -12,6 +12,7 @@ import Navbar from './components/Navbar';
 // import Navbar from './components/Navbar';
 import OurPartners from './components/OurPartners';
 // import Resolute from './components/Resolute';
+import Delegate from "./components/Delegate"
 
 
 function App() {
@@ -20,7 +21,8 @@ function App() {
       <Navbar/>
       <Landing/>
      <Development />
-   
+     <Infrastructure />
+  
     </div>
   );
 }

@@ -4,19 +4,19 @@ import { Alert, Space } from "antd";
 const Development = () => {
   return (
     <>
-      <div className="main22">
+      <div className="main22-infra">
         {/* maindevelop cantioner start */}
-        <div className="maindevelop">
+        <div className="maindevelop-infra">
           {/* leftdevelop cantioner start */}
-          <div className="leftdevelop">
-            <div className="subleftdevelop1">
+          <div className="leftdevelop-infra">
+            <div className="subleftdevelop1-infra">
               <h1>
                 Development<br></br>
-                <span className="servicesdevelop">Services</span>
+                <span className="servicesdevelop-infra">Services</span>
               </h1>
             </div>
 
-            <div className="subleftdevelop2">
+            <div className="subleftdevelop2-infra">
               <Space
                 className="space-alert-dev gap-10"
                 direction="vertical"
@@ -25,7 +25,7 @@ const Development = () => {
                 }}
               >
                 <Alert
-                  className="alert2001"
+                  className="alert2001-infra"
                   message={
                     <span style={{ color: "white", fontWeight: "500" }}>
                       Cosmos Blockchain Development
@@ -46,7 +46,7 @@ const Development = () => {
                   }}
                 />
                 <Alert
-                  className="alert2001"
+                  className="alert2001-infra"
                   message={
                     <span style={{ color: "white", fontWeight: "500" }}>
                       Blockchain Auditing
@@ -62,7 +62,7 @@ const Development = () => {
                   style={{ padding: 15, marginBottom: "10px", width: "100%" }}
                 />
                 <Alert
-                  className="alert2001"
+                  className="alert2001-infra"
                   message={
                     <span style={{ color: "white", fontWeight: "500" }}>
                       IBC Apps
@@ -78,7 +78,7 @@ const Development = () => {
                   style={{ padding: 15, marginBottom: "10px", width: "100%" }}
                 />
                 <Alert
-                  className="alert2001"
+                  className="alert2001-infra"
                   message={
                     <span style={{ color: "white", fontWeight: "500" }}>
                       COSM WASM Smart Contracts
@@ -99,7 +99,7 @@ const Development = () => {
           {/* leftdevelop cantioner end */}
 
           {/* RightDevelop cantioner start */}
-          <div className="RightDevelop">
+          <div className="RightDevelop-infra">
             <div>
               <p>
                 We are a core tech company passionate about the research and
@@ -111,28 +111,28 @@ const Development = () => {
                 company passionate about the research and
               </p>
             </div>
-            <div className="figma2001">
-              <div className="circles">
-                <span className="dot1">
+            <div className="figma2001-infra">
+              <div className="circles-infra">
+                <span className="dot1-infra">
                   4 + <br></br>Total Networks
                 </span>
-                <span className="dot2">
+                <span className="dot2-infra">
                   4 + <br></br>Total Networks
                 </span>
-                <span className="dot3">
+                <span className="dot3-infra">
                   4 + <br></br>Total Networks
                 </span>
-                <span className="dot4">
+                <span className="dot4-infra">
                   4 + <br></br>Total Networks
                 </span>
-                <span className="dot5">
+                <span className="dot5-infra">
                   4 + <br></br>Total Networks
                 </span>
-                <span className="dot6"></span>
-                <span className="dot7"></span>
-                <span className="dot8"></span>
-                <span className="dot9"></span>
-                <span className="dot10"></span>
+                <span className="dot6-infra"></span>
+                <span className="dot7-infra"></span>
+                <span className="dot8-infra"></span>
+                <span className="dot9-infra"></span>
+                <span className="dot10-infra"></span>
               </div>
             </div>
           </div>

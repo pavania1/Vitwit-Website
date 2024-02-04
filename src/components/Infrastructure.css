@@ -3,8 +3,7 @@
   padding: 80px 0px;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  gap: 80px;
+  gap: 40px;
 }
 .infrasturcture-main-head {
   display: flex;
@@ -38,7 +37,7 @@
 .bottom-infrastructure {
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
+  align-items: flex-start;
   gap: 67px;
 }
 .alert3001 {
@@ -62,4 +61,190 @@
   align-items: flex-end;
   gap: 24px;
   flex: 1 0 0;
+}
+.infrastructure-main-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+}
+.infrastructure-text {
+  color: #fff;
+  text-align: center;
+  font-family: "Libre Franklin";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+}
+.infrastructure-left {
+  display: flex;
+  position: relative;
+  justify-content: start;
+  top: 0;
+}
+.alert-right1 {
+  width: 70%;
+  margin: 0;
+}
+.alert-right2 {
+  margin-top: 20%;
+}
+.cosmos {
+  border-radius: 16px;
+  background: #393f68;
+  width: 177.333px;
+  height: 80px;
+  flex-shrink: 0;
+}
+.cosmos-infra {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.infra-btn {
+  display: flex;
+
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 6px;
+  background: linear-gradient(180deg, #2f50da 0%, #a562f7 100%);
+}
+.right-infra {
+  margin-right: 5%;
+  margin-top: 2%;
+}
+.polygen {
+  border-radius: 16px;
+  background: #9757da;
+  width: 177.333px;
+  height: 80px;
+}
+.osmosis {
+  border-radius: 16px;
+  background: #a289bf;
+  width: 177.333px;
+  height: 80px;
+}
+.akash {
+  border-radius: 16px;
+  background: #851c12;
+  width: 177.333px;
+  height: 80px;
+}
+.passage {
+  border-radius: 16px;
+
+  background: rgba(255, 255, 255, 0.2);
+  width: 177.333px;
+  height: 80px;
+}
+.oasis {
+  border-radius: 16px;
+  background: #00c6eb;
+  width: 177.333px;
+  height: 80px;
+}
+.stargaze {
+  border-radius: 16px;
+  background: #c8dc7c;
+  width: 177.333px;
+  height: 80px;
+}
+.regen {
+  border-radius: 16px;
+  background: #9bd5af;
+  width: 177.333px;
+  height: 80px;
+}
+.umee {
+  border-radius: 16px;
+  background: #e0b0ff;
+  width: 177.333px;
+  height: 80px;
+}
+.evmos {
+  border-radius: 16px;
+  background: #f1705b;
+  width: 177.333px;
+  height: 80px;
+}
+.agoric {
+  border-radius: 16px;
+  background: #7d1729;
+  width: 177.333px;
+  height: 80px;
+}
+.infra-icons-text {
+  color: #fff;
+  font-family: "Libre Franklin";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 120% */
+}
+.mainnet-dot {
+  width: 80px;
+  height: 80px;
+  background: #e0b0ff;
+  border-radius: 50%;
+}
+.mainnet-dot img {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  right: -25px;
+  top: 24px;
+}
+.whitelabel-dot {
+  width: 80px;
+  height: 80px;
+  background: #9474f6;
+  border-radius: 50%;
+}
+.whitelabel-dot img {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  right: -27px;
+  top: 24px;
+}
+.enterprise-dot {
+  width: 80px;
+  height: 80px;
+  background: #f07576;
+  border-radius: 50%;
+}
+.enterprise-dot img {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  right: -27px;
+  top: 24px;
+}
+.infra-text-para {
+  color: #fff;
+  font-family: "Libre Franklin";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+}
+
+.comsos-logo-style {
+  position: absolute;
+  margin-top: -2%;
+  margin-left: 3%;
+  margin-bottom: 2%;
+}
+.icons-infra {
+  margin-bottom: 10%;
 }

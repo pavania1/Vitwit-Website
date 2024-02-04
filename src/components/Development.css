@@ -3,7 +3,7 @@
   padding: 0px;
   box-sizing: border-box;
 }
-.main22 {
+.main22-infra {
   width: 100%;
   background: linear-gradient(
     91deg,
@@ -18,25 +18,25 @@
   align-items: center;
   gap: 40px;
 }
-.maindevelop {
+.maindevelop-infra {
   width: 90%;
   margin: auto;
   display: flex;
 }
-.leftdevelop {
+.leftdevelop-infra {
   width: 45%;
   margin-left: -1%;
 }
-.RightDevelop {
+.RightDevelop-infra {
   width: 52%;
   margin-left: 5%;
 }
-.RightDevelop p {
+.RightDevelop-infra p {
   text-align: start;
   color: #fff;
   margin-left: 18px;
 }
-.subleftdevelop1 h1 {
+.subleftdevelop1-infra h1 {
   color: #fff;
   font-weight: 600;
   font-size: 54px;
@@ -44,20 +44,20 @@
   font-family: "Libre Franklin";
 }
 
-.alert2001 {
+.alert2001-infra {
   /* background: rgba(255, 255, 255, 0.08); */
   width: 100%;
   text-align: start;
   border-color: rgba(255, 255, 255, 0.04);
   background: rgba(255, 255, 255, 0.04);
 }
-.servicesdevelop {
+.servicesdevelop-infra {
   background: linear-gradient(169deg, #6458e7 26.53%, #9760f4 55.47%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Libre Franklin";
 }
-.dot1 {
+.dot1-infra {
   height: 314px;
   width: 314px;
 
@@ -82,7 +82,7 @@
   backdrop-filter: blur(50px);
 }
 
-.dot2 {
+.dot2-infra {
   height: 180px;
   width: 180px;
 
@@ -98,7 +98,7 @@
   font-size: 16px;
   background: linear-gradient(90deg, #e0b0ff 0%, #9474f6 76.04%);
 }
-.dot3 {
+.dot3-infra {
   height: 125px;
   width: 125px;
   /* background: linear-gradient(169deg, #6458e7 26.53%, #9760f4 55.47%); */
@@ -112,10 +112,10 @@
   color: #fff;
   font-weight: 500;
   font-size: 16px;
-  background: linear-gradient(90deg, #E0B0FF 0%, #9474F6 76.04%);
-/* filter: drop-shadow(4px 4px 100px rgba(255, 255, 255, 0.25)); */
+  background: linear-gradient(90deg, #e0b0ff 0%, #9474f6 76.04%);
+  /* filter: drop-shadow(4px 4px 100px rgba(255, 255, 255, 0.25)); */
 }
-.dot4 {
+.dot4-infra {
   height: 150px;
   width: 150px;
 
@@ -132,7 +132,7 @@
   padding: 2px;
   background: linear-gradient(90deg, #e0b0ff 0%, #9474f6 76.04%);
 }
-.dot5 {
+.dot5-infra {
   height: 122px;
   width: 122px;
   /* background: linear-gradient(169deg, #6458e7 26.53%, #9760f4 55.47%); */
@@ -146,9 +146,9 @@
   color: #fff;
   font-weight: 500;
   font-size: 14px;
-  background: linear-gradient(90deg, #E0B0FF 0%, #9474F6 76.04%);
+  background: linear-gradient(90deg, #e0b0ff 0%, #9474f6 76.04%);
 }
-.dot6 {
+.dot6-infra {
   height: 35px;
   width: 35px;
   display: flex;
@@ -159,22 +159,30 @@
   position: relative;
   left: 22%;
   margin-top: -44%;
-  background: linear-gradient(90deg, rgba(224, 176, 255, 0.20) 0%, rgba(148, 116, 246, 0.20) 76.04%);
+  background: linear-gradient(
+    90deg,
+    rgba(224, 176, 255, 0.2) 0%,
+    rgba(148, 116, 246, 0.2) 76.04%
+  );
 }
-.dot7 {
+.dot7-infra {
   height: 37px;
   width: 37px;
   display: flex;
   justify-content: center;
   align-items: center;
- 
+
   border-radius: 50%;
   position: relative;
   left: 80%;
   margin-top: 30%;
-  background: linear-gradient(90deg, rgba(224, 176, 255, 0.20) 0%, rgba(148, 116, 246, 0.20) 76.04%);
+  background: linear-gradient(
+    90deg,
+    rgba(224, 176, 255, 0.2) 0%,
+    rgba(148, 116, 246, 0.2) 76.04%
+  );
 }
-.dot8 {
+.dot8-infra {
   height: 16px;
   width: 16px;
   display: flex;
@@ -185,9 +193,13 @@
   position: relative;
   left: 68%;
   margin-top: -10%;
-  background: linear-gradient(90deg, rgba(224, 176, 255, 0.20) 0%, rgba(148, 116, 246, 0.20) 76.04%);
+  background: linear-gradient(
+    90deg,
+    rgba(224, 176, 255, 0.2) 0%,
+    rgba(148, 116, 246, 0.2) 76.04%
+  );
 }
-.dot9 {
+.dot9-infra {
   height: 13px;
   width: 13px;
   display: flex;
@@ -196,11 +208,15 @@
   /* background-color: rgba(251, 250, 250, 0.04); */
   border-radius: 50%;
   position: relative;
-  left: 20%;
-  margin-top: 28%;
-  background: linear-gradient(90deg, rgba(224, 176, 255, 0.20) 0%, rgba(148, 116, 246, 0.20) 76.04%);
+  left: 32%;
+  margin-top: 20%;
+  background: linear-gradient(
+    90deg,
+    rgba(224, 176, 255, 0.2) 0%,
+    rgba(148, 116, 246, 0.2) 76.04%
+  );
 }
-.dot10 {
+.dot10-infra {
   height: 37px;
   width: 37px;
   display: flex;
@@ -210,14 +226,18 @@
   border-radius: 50%;
   position: relative;
   left: 71%;
-  margin-top: -60%;
-  background: linear-gradient(90deg, rgba(224, 176, 255, 0.20) 0%, rgba(148, 116, 246, 0.20) 76.04%);
+  margin-top: -52%;
+  background: linear-gradient(
+    90deg,
+    rgba(224, 176, 255, 0.2) 0%,
+    rgba(148, 116, 246, 0.2) 76.04%
+  );
 }
-.figma2001 {
+.figma2001-infra {
   margin-right: 20%;
   width: 100%;
   margin-top: 30%;
 }
-.circles {
+.circles-infra {
   margin-right: -15%;
 }
