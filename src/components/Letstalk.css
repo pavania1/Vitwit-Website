@@ -6,14 +6,9 @@
 }
 .letstalk-head {
   justify-content: space-between;
+ 
 }
-.letstalk-heading {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  justify-content: center;
-  align-items: flex-start;
-}
+
 .letstalk-para-text {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -22,10 +17,11 @@
   line-height: 1.5rem;
   color: #ffffff;
   text-align: left;
+  margin-bottom: 10%;
 }
 .letstalk-form {
   display: flex;
-  margin-left: 1rem;
+  
 }
 .talk-text {
   background: linear-gradient(169deg, #6458e7 26.53%, #9760f4 55.47%);
@@ -46,8 +42,10 @@
   font-weight: 700;
   line-height: 64px; /* 118.519% */
   text-align: left;
+  margin-bottom: 2%;
 }
 .right-letstalk {
+  margin-bottom: -5%;
 }
 .form-bg {
   display: flex;
