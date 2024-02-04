@@ -5,6 +5,7 @@ import TelegramLogo from "../assets/social-icons/telegram.png";
 import TwitterLogo from "../assets/social-icons/twitter.png";
 import PersonIcon from "../assets/person-icon.svg";
 import EmailIcon from "../assets/gmail.svg";
+import "./Letstalk.css";
 
 const Letstalk = () => {
   const handleSubmit = (event) => {
@@ -12,8 +13,8 @@ const Letstalk = () => {
   };
   return (
     <div className="letstalk-main">
-      <div className="letstalk-head">
-        <div className="letstalk-heading">
+      <div className="right-letstalk">
+        <div className="letstalk-head">
           <div className="lets-text">
             Lets <span className="talk-text">Talk</span>
           </div>
@@ -24,33 +25,37 @@ const Letstalk = () => {
           </p>
           <SocialIcons />
         </div>
+      </div>
+      <div className="left-letstalk">
         <div className="form-bg">
           <form onSubmit={handleSubmit} className=" space-y-10">
             <div className="letstalk-form">
-              <div className="text-field-bg">
-                <div className="gap-2 flex">
-                  <img className="" src={PersonIcon} alt="Person Icon" />
-                  <p className="nav-text">Name</p>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    required
-                    style={{ background: "none" }}
-                  />
+              <div className="flex gap-4">
+                <div className="text-field-bg">
+                  <div className="gap-2 flex">
+                    <img className="" src={PersonIcon} alt="Person Icon" />
+                    <p className="nav-text">Name</p>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      required
+                      style={{ background: "none" }}
+                    />
+                  </div>
                 </div>
-              </div>
-              <div className="text-field-bg">
-                <div className="gap-2 flex">
-                  <img className="" src={EmailIcon} alt="Person Icon" />
-                  <p className="nav-text">Email</p>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    style={{ background: "none" }}
-                  />
+                <div className="text-field-bg">
+                  <div className="gap-2 flex">
+                    <img className="" src={EmailIcon} alt="Person Icon" />
+                    <p className="nav-text">Email</p>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                      style={{ background: "none" }}
+                    />
+                  </div>
                 </div>
               </div>
             </div>
