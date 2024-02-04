@@ -1,11 +1,9 @@
-
-
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
-.main22 {
+.main22-ourpartners {
   width: 100%;
   background: linear-gradient(
     91deg,
@@ -15,23 +13,23 @@
     #2d2753 99.19%
   );
 }
-.maindevelop {
+.maindevelop-partners {
   width: 90%;
   margin: auto;
   display: flex;
 }
-.leftdevelop {
+.leftdevelop-partners {
   width: 45%;
 }
-.RightDevelop {
+.RightDevelop-partners {
   width: 52%;
 }
-.RightDevelop p {
+.RightDevelop-partners p {
   text-align: start;
   color: #fff;
   margin-left: 18px;
 }
-.subleftdevelop1 h1 {
+.subleftdevelop1-partners h1 {
   color: #fff;
   font-weight: 600;
   font-size: 54px;
@@ -40,8 +38,8 @@
 }
 .alert-main {
   display: flex;
+ margin-top: 5%;
 }
-
 
 .alert2001 {
   /* background: rgba(255, 255, 255, 0.08); */
@@ -53,7 +51,7 @@
 }
 .alert2002 {
   /* background: rgba(255, 255, 255, 0.08); */
-  width: 70%;
+  width: 80%;
   text-align: start;
   border-color: rgba(255, 255, 255, 0.04);
   background: rgba(255, 255, 255, 0.04);
@@ -61,6 +59,7 @@
 .alert2003 {
   /* background: rgba(255, 255, 255, 0.08); */
   width: 70%;
+  
   text-align: start;
   border-color: rgba(255, 255, 255, 0.04);
   background: rgba(255, 255, 255, 0.04);
@@ -79,81 +78,92 @@
   -webkit-text-fill-color: transparent;
   font-family: "Libre Franklin";
 }
-/* .dot1 {
-  height: 250px;
-  width: 250px;
-  background: linear-gradient(169deg, #6458e7 26.53%, #9760f4 55.47%);
+.dot1 {
+  height: 314px;
+  width: 314px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 25%;
+  margin-top: 25%;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.08) 0%,
+      rgba(0, 0, 0, 0.08) 100%
+    ),
+    linear-gradient(90deg, #e0b0ff 0%, #9474f6 76.04%);
+  box-shadow: 4px 4px 4px 0px rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(50px);
+}
+
+.dot2 {
+  height: 180px;
+  width: 180px;
+
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 60%;
+  top: -450px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  background: linear-gradient(90deg, #e0b0ff 0%, #9474f6 76.04%);
+}
+.dot3 {
+  height: 125px;
+  width: 125px;
+  /* background: linear-gradient(169deg, #6458e7 26.53%, #9760f4 55.47%); */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 63%;
+  top: -470px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  background: linear-gradient(90deg, #e0b0ff 0%, #9474f6 76.04%);
+}
+.dot4 {
+  height: 150px;
+  width: 150px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   left: 30%;
-  margin-top: 25%;
-  color: #fff;
-  font-weight: 600;
-  font-size: 18px;
-}
-
-.dot2 {
-  height: 180px;
-  width: 180px;
-  background: linear-gradient(169deg, #6458e7 26.53%, #9760f4 55.47%);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  left: 65%;
-  top: -400px;
+  margin-top: -800px;
   color: #fff;
   font-weight: 500;
   font-size: 16px;
-}
-.dot3 {
-  height: 125px;
-  width: 125px;
-  background: linear-gradient(169deg, #6458e7 26.53%, #9760f4 55.47%);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  left: 68%;
-  top: -430px;
-  color: #fff;
-  font-weight: 500;
-  font-size: 16px;
-}
-.dot4 {
-  height: 120px;
-  width: 120px;
-  background: linear-gradient(169deg, #6458e7 26.53%, #9760f4 55.47%);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  left: 33%;
-  margin-top: -700px;
-  color: #fff;
-  font-weight: 500;
-  font-size: 16px;
+  padding: 2px;
+  background: linear-gradient(90deg, #e0b0ff 0%, #9474f6 76.04%);
 }
 .dot5 {
-  height: 100px;
-  width: 100px;
-  background: linear-gradient(169deg, #6458e7 26.53%, #9760f4 55.47%);
+  height: 122px;
+  width: 122px;
+  /* background: linear-gradient(169deg, #6458e7 26.53%, #9760f4 55.47%); */
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  left: 54%;
-  margin-top: 28%;
+  left: 47%;
+  margin-top: 22%;
   color: #fff;
   font-weight: 500;
   font-size: 14px;
+  background: linear-gradient(90deg, #e0b0ff 0%, #9474f6 76.04%);
 }
 .dot6 {
   height: 35px;
@@ -161,23 +171,33 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(251, 250, 250, 0.04);
+  /* background-color: rgba(251, 250, 250, 0.04); */
   border-radius: 50%;
   position: relative;
   left: 22%;
   margin-top: -44%;
+  background: linear-gradient(
+    90deg,
+    rgba(224, 176, 255, 0.2) 0%,
+    rgba(148, 116, 246, 0.2) 76.04%
+  );
 }
 .dot7 {
-  height: 28px;
-  width: 28px;
+  height: 37px;
+  width: 37px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(251, 250, 250, 0.04);
+
   border-radius: 50%;
   position: relative;
-  left: 72%;
-  margin-top: 24%;
+  left: 65%;
+  margin-top: 30%;
+  background: linear-gradient(
+    90deg,
+    rgba(224, 176, 255, 0.2) 0%,
+    rgba(148, 116, 246, 0.2) 76.04%
+  );
 }
 .dot8 {
   height: 16px;
@@ -185,11 +205,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(251, 250, 250, 0.04);
+  /* background-color: rgba(251, 250, 250, 0.04); */
   border-radius: 50%;
   position: relative;
-  left: 68%;
+  left: 60%;
   margin-top: -10%;
+  background: linear-gradient(
+    90deg,
+    rgba(224, 176, 255, 0.2) 0%,
+    rgba(148, 116, 246, 0.2) 76.04%
+  );
 }
 .dot9 {
   height: 13px;
@@ -197,23 +222,33 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(251, 250, 250, 0.04);
+  /* background-color: rgba(251, 250, 250, 0.04); */
   border-radius: 50%;
   position: relative;
-  left: 20%;
-  margin-top: 18%;
+  left: 32%;
+  margin-top: 20%;
+  background: linear-gradient(
+    90deg,
+    rgba(224, 176, 255, 0.2) 0%,
+    rgba(148, 116, 246, 0.2) 76.04%
+  );
 }
 .dot10 {
-  height: 27px;
-  width: 27px;
+  height: 37px;
+  width: 37px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(251, 250, 250, 0.04);
+  /* background-color: rgba(251, 250, 250, 0.04); */
   border-radius: 50%;
   position: relative;
-  left: 71%;
-  margin-top: -63%;
+  left: 61%;
+  margin-top: -48%;
+  background: linear-gradient(
+    90deg,
+    rgba(224, 176, 255, 0.2) 0%,
+    rgba(148, 116, 246, 0.2) 76.04%
+  );
 }
 .alert-right1 {
   margin-top: 15%;
@@ -223,13 +258,16 @@
   width: 80px;
   height: 80px;
   padding: 25.8px 28px 26.5px 28px;
-  background-color: #f07576;
+  background-color: #e0b0ff;
+  border-radius: 50%;
 }
 .eng-dot2 {
   width: 80px;
   height: 80px;
   padding: 25.8px 28px 26.5px 28px;
-  background-color: #e0b0ff;
+
+  background-color: #84e0c2;
+  border-radius: 50%;
 }
 .eng-dot3 {
   width: 80px;
@@ -237,7 +275,8 @@
   flex-grow: 0;
   padding: 27.8px 28px 28.2px;
   transform: rotate(-180deg);
-  background-color: #9474f6;
+  background-color: #f07576;
+  border-radius: 50%;
 }
 .eng-dot4 {
   width: 80px;
@@ -245,7 +284,9 @@
   flex-grow: 0;
   padding: 27.9px 28px 28.4px 28px;
   transform: rotate(-180deg);
-  background-color: #84e0c2;
+  background-color: #9474f6;
+
+  border-radius: 50%;
 }
 .ourpartners-text {
   font-family: LibreFranklin;
@@ -258,6 +299,26 @@
   text-align: left;
   color: #fff;
 }
-.figma2001 {
-  justify-content: flex-start;
-} */
+.figma2001-partners {
+  margin-left: -43%;
+}
+.head-text {
+  color: #fff;
+  font-family: "Libre Franklin";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 120% */
+}
+.para-text {
+  color: #fff;
+  font-family: "Libre Franklin";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+}
+.alert-right1-partners {
+  margin-top: 20%;
+
+}

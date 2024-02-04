@@ -39,7 +39,7 @@ const Infrastructure = () => {
         </div>
         <div className="bottom-infrastructure">
           <div className="infrastructure-left">
-            <div className="alert-right1">
+            <div className="alert-right1-infra">
               <Alert
                 className="alert3001"
                 message={
@@ -84,7 +84,7 @@ const Infrastructure = () => {
                 style={{ marginBottom: "10%", width: "60%", height: "45%" }}
               />
             </div>
-            <div className="alert-right2">
+            <div className="alert-right2-infra">
               <Alert
                 className="alert3002"
                 message={

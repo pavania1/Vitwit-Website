@@ -13,7 +13,9 @@ import Navbar from './components/Navbar';
 import OurPartners from './components/OurPartners';
 // import Resolute from './components/Resolute';
 import Delegate from "./components/Delegate"
-
+import Resolute from './components/Resolute';
+import Letstalk from "./components/Letstalk"
+import Footer from "./components/Footer"
 
 function App() {
   return (
@@ -22,7 +24,11 @@ function App() {
       <Landing/>
      <Development />
      <Infrastructure />
-  
+  <OurPartners />
+  <Delegate />
+  <Resolute />
+  <Letstalk />
+  <Footer />
     </div>
   );
 }
