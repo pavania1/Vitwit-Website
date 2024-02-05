@@ -316,3 +316,43 @@
   margin-top: 20%;
 
 }
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.dot6 {
+  animation: bounce 2s ease-in-out infinite, fadeInOut 2s ease-in-out infinite;
+}
+
+.dot7 {
+  animation: rotate 3s linear infinite, fadeInOut 2s ease-in-out infinite;
+}
+
+.dot8 {
+  animation: fadeInOut 2s ease-in-out infinite, rotate 2s linear infinite;
+}
+
+.dot9 {
+  animation: bounce 2s ease-in-out infinite, rotate 2s linear infinite;
+}
+
+.dot10 {
+  animation: rotate 3s linear infinite, fadeInOut 2s ease-in-out infinite;
+}

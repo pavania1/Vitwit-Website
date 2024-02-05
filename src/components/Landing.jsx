@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useState, useEffect } from "react";
 import "./Landing.css";
 import LandingImage from "../assets/landing-image.png";
@@ -16,7 +14,6 @@ const Landing = () => {
     let charIndex = 0;
 
     const typingInterval = setInterval(() => {
-      console.log(textIndex, charIndex, textsToType);
       if (textsToType[textIndex].length === charIndex && textIndex === 2) {
         clearInterval(typingInterval);
       } else if (charIndex === textsToType[textIndex].length) {
@@ -48,8 +45,7 @@ const Landing = () => {
               <h1>
                 {typedText}
                 <br /> {typedText2}
-                <br />{" "}
-                <span className="servicesdevelop-landing">{typedText3}</span>
+                <br /> <span className="servicesdevelop-landing">{typedText3}</span>
               </h1>
             </div>
             <div className="landing-text-main">
@@ -75,8 +71,8 @@ const Landing = () => {
           {/* leftdevelop cantioner end */}
 
           {/* RightDevelop cantioner start */}
-          <div className="RightDevelop-landing">
-            <img src={LandingImage} alt="Landing-Image" />
+          <div className="RightDevelop-landing animated-image">
+            <img src={LandingImage} alt="Landing-Image"/>
           </div>
           {/*RightDevelop cantioner end */}
         </div>

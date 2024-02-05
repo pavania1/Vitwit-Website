@@ -81,7 +81,7 @@
 .infrastructure-left {
   display: flex;
   position: relative;
-  justify-content: start;
+  justify-content: flex-start;
   top: 0;
 }
 .alert-right1-infra {

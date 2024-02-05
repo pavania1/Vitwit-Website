@@ -2,12 +2,14 @@ import React, { useState, useEffect } from "react";
 import "./Delegate.css";
 import Akash from "../assets/partners/akash.svg";
 import Regen from "../assets/partners/regen.svg";
-import Polygen from "../assets/partners/passage.svg";
+import Polygen from "../assets/partners/polygon.svg";
 import Cosmos from "../assets/partners/cosmos.svg";
 import { Alert, Space } from "antd";
 import Person from "../assets/person.svg";
 import Twitter from "../assets/partnerstwitter.svg";
 import Favorite from "../assets/favorite.svg";
+import Passage from "../assets/partners/passage.svg";
+import Chainflow from "../assets/partners/chainflow.svg"
 const Delegate = () => {
   const [typedText, setTypedText] = useState("");
   const [typedText2, setTypedText2] = useState("");
@@ -61,9 +63,9 @@ const Delegate = () => {
                 <img src={Cosmos} alt="Cosmos" />
               </div>
               <div className="partners-logo-2">
-                <img src={Akash} alt="Akash" />
-                <img src={Regen} alt="Regen" />
-                <img src={Polygen} alt="Polygen" />
+                <img src={Chainflow} alt="Chainflow" />
+                <img src={Cosmos} alt="Cosmoa" />
+                <img src={Passage} alt="Passage" />
               </div>
             </div>
           </div>

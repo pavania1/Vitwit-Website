@@ -32,7 +32,7 @@ body {
     @apply w-[150px] h-[39.725px] shrink-0;
   }
   .menu-list {
-    @apply flex justify-end items-start gap-32;
+    @apply flex justify-end items-start gap-32 z-50 cursor-pointer;
   }
   .get-touch-btn {
     @apply flex justify-center items-center gap-2.5 h-10 rounded px-6 py-2 border-[0.5px] border-solid border-[#2F50DA];
@@ -42,6 +42,7 @@ body {
     @apply text-white text-center text-sm not-italic font-normal leading-9;
     font-family: "Libre Franklin";
   }
+  
 
   /* footer */
   .footer {
@@ -62,152 +63,4 @@ body {
   .contact__socials__icon {
     @apply w-[25px] h-[25px] hover:scale-[1.1] hover:opacity-95 transition-all ease-in delay-75 transform;
   }
-
-  /* Lets talk */
-  /* .talk-text {
-    @apply bg-clip-text text-[54px] not-italic font-bold leading-[64px];
-    background: linear-gradient(169deg, #6458e7 26.53%, #9760f4 55.47%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: "Libre Franklin";
-  }
-  .lets-text {
-    @apply text-white text-[54px] not-italic font-bold leading-[64px];
-    font-family: "Libre Franklin";
-  }
-  .form-bg {
-    @apply flex flex-col items-center gap-10 p-10 rounded-3xl;
-    background: rgba(255, 255, 255, 0.04);
-  }
-  .text-field-bg {
-    @apply border flex h-[54px] flex-col justify-center items-start gap-6 flex-[1_0_0] px-6 py-0 rounded-2xl border-solid border-[rgba(255,255,255,0.20)];
-  }
-  .memo-text-field {
-    @apply flex flex-1 overflow-hidden bg-[#FFFFFF0D] rounded-2xl px-4 pt-4;
-    border: 1px solid transparent;
-  }
-  .send-btn {
-    @apply flex justify-center items-center gap-2.5 px-10 py-4 rounded-2xl text-white;
-    background: linear-gradient(180deg, #2f50da 0%, #a562f7 100%);
-  } */
-
-  /* Resolute */
-  /* .resolute {
-    @apply flex flex-col  p-20;
-    background: linear-gradient(180deg, #2f50da 0%, #a562f7 100%);
-  }
-  .resolute-btn {
-    @apply text-white text-sm not-italic font-normal leading-6 border rounded-2xl border-solid border-white gap-2 pl-10 pr-[40px] py-[16px];
-    font-family: "Libre Franklin";
-  }
-  .resolute-btn-frame {
-    @apply grow-0 flex flex-row justify-center items-center gap-2 px-10 py-4 rounded-2xl border-[solid] border-white;
-  }
-  .Resolute-Interchain-Interface {
-    @apply self-stretch grow text-xl font-[normal] not-italic leading-loose tracking-[normal] text-left text-[rgba(255,255,255,0.5)];
-    font-family: LibreFranklin;
-    font-stretch: normal;
-  }
-  .Resolute-Interchain-Interface .text-style-1 {
-    @apply text-[54px] font-[bold] leading-none text-white;
-  }
-  .text-frame {
-    @apply flex flex-col justify-center items-start gap-10 ml-0 mr-[62px] mt-[60px] mb-[131px] p-0
-    self-stretch text-sm font-[normal] not-italic leading-[1.71] tracking-[normal] text-left text-white;
-    font-family: LibreFranklin;
-  } */
-
-  /* Development services */
-
-  /* .main22 {
-    @apply w-full;
-    background: linear-gradient(
-      91deg,
-      #280a33 0.63%,
-      #000 49.91%,
-      #000 62.74%,
-      #2d2753 99.19%
-    );
-  }
-  .maindevelop {
-    @apply w-[90%] flex m-auto;
-  }
-  .leftdevelop {
-    @apply w-[52%];
-  }
-  .RightDevelop {
-    @apply w-[45%];
-  }
-  .RightDevelop p {
-    @apply text-start text-white ml-[18px];
-  }
-  .subleftdevelop1 h1 {
-    @apply text-white font-semibold text-[54px] text-start;
-    font-family: "Libre Franklin";
-  }
-  .alert2001 {
-    @apply w-full text-start border-[rgba(255,255,255,0.04)];
-    background: rgba(255, 255, 255, 0.04);
-  }
-  .servicesdevelop {
-    background: linear-gradient(169deg, #6458e7 26.53%, #9760f4 55.47%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: "Libre Franklin";
-  }
-  .dot1 {
-    @apply h-[250px] w-[250px] flex justify-center items-center relative text-white font-semibold text-lg mt-[25%] rounded-[50%] left-[30%];
-    background: linear-gradient(169deg, #6458e7 26.53%, #9760f4 55.47%);
-  }
-  .dot2 {
-    @apply h-[180px] w-[180px] flex justify-center items-center relative top-[-400px] text-white font-medium text-base rounded-[50%] left-[65%];
-    background: linear-gradient(169deg, #6458e7 26.53%, #9760f4 55.47%);
-  }
-  .dot3 {
-    @apply h-[125px] w-[125px] flex justify-center items-center relative top-[-430px] text-white font-medium text-base rounded-[50%] left-[68%];
-    background: linear-gradient(169deg, #6458e7 26.53%, #9760f4 55.47%);
-  }
-  .dot4 {
-    @apply h-[120px] w-[120px] flex justify-center items-center relative mt-[-700px] text-white font-medium text-base rounded-[50%] left-[33%];
-    background: linear-gradient(169deg, #6458e7 26.53%, #9760f4 55.47%);
-  }
-  .dot5 {
-    @apply h-[100px] w-[100px] flex justify-center items-center relative text-white font-medium text-sm mt-[23%] rounded-[50%] left-[50%];
-    background: linear-gradient(169deg, #6458e7 26.53%, #9760f4 55.47%);
-  }
-  .dot6 {
-    @apply h-[35px] w-[35px] flex justify-center items-center bg-[rgba(251,250,250,0.04)] relative mt-[-44%] rounded-[50%] left-[22%];
-  }
-  .dot7 {
-    @apply h-7 w-7 flex justify-center items-center bg-[rgba(251,250,250,0.04)] relative mt-[24%] rounded-[50%] left-[72%];
-  }
-  .dot8 {
-    @apply h-4 w-4 flex justify-center items-center bg-[rgba(251,250,250,0.04)] relative mt-[-10%] rounded-[50%] left-[68%];
-  }
-  .dot9 {
-    @apply h-[13px] w-[13px] flex justify-center items-center bg-[rgba(251,250,250,0.04)] relative mt-[18%] rounded-[50%] left-[20%];
-  }
-  .dot10 {
-    @apply h-[27px] w-[27px] flex justify-center items-center bg-[rgba(251,250,250,0.04)] relative mt-[-63%] rounded-[50%] left-[71%];
-  } */
-
-  /* OurPartners */
-  /* .ourpartners {
-    @apply flex flex-col justify-start items-start gap-20 p-0 w-[90%] margin:auto border-red-400 border-2 border-solid;
-  }
-  .our-partners-frame1 {
-    @apply self-stretch grow-0 flex flex-col justify-start items-center gap-10 opacity-80 p-0 w-full ;
-  }
-  .ourpartners-text {
-    @apply h-[72px] self-stretch grow-0 text-sm font-[normal] not-italic leading-[1.71] tracking-[normal] text-left text-white;
-    font-family: LibreFranklin;
-    font-stretch: normal;
-  }
-  .ourpartners-card {
-    @apply w-[350px]  grow-0 flex flex-row justify-start items-start gap-4 bg-[linear-gradient(126deg,#fff_0%,rgba(255,255,255,0)_100%)] rounded-[16px,0px,0px,16px] ml-10 mr-0 mt-0 mb-[88.7px] p-6;
-
-  }
-  .eng-dot {
-    @apply w-20 h-20 flex justify-center items-center rounded-[50%] bg-[#84e0c2] pt-[27.9px] pb-[28.4px] px-7;
-  }*/
 }
