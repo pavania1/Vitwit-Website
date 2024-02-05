@@ -1,7 +1,32 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Development.css";
 import { Alert, Space } from "antd";
 const Development = () => {
+  const [typedText, setTypedText] = useState("");
+  const [typedText2, setTypedText2] = useState("");
+
+  const textsToType = ["Development", "Services"];
+
+  useEffect(() => {
+    let textIndex = 0;
+    let charIndex = 0;
+
+    const typingInterval = setInterval(() => {
+      if (textsToType[textIndex].length === charIndex && textIndex === 1) {
+        clearInterval(typingInterval);
+      } else if (textIndex === 0 && charIndex === textsToType[0].length) {
+        charIndex = 0;
+        textIndex++;
+      } else if (textIndex === 1) {
+        charIndex++;
+        setTypedText2(textsToType[1].slice(0, charIndex));
+      } else {
+        charIndex++;
+        setTypedText(textsToType[0].slice(0, charIndex));
+      }
+    }, 200);
+    return () => clearInterval(typingInterval);
+  }, []);
   return (
     <>
       <div className="main22-infra">
@@ -11,8 +36,9 @@ const Development = () => {
           <div className="leftdevelop-infra">
             <div className="subleftdevelop1-infra">
               <h1>
-                Development<br></br>
-                <span className="servicesdevelop-infra">Services</span>
+                {typedText}
+                <br></br>
+                <span className="servicesdevelop-infra">{typedText2}</span>
               </h1>
             </div>
 

@@ -1,109 +1,33 @@
-// import React from "react";
-// import Enginnering from "../assets/engineering.png";
-// import Infrastructure from "../assets/infrastructure.png";
-// import Enterprise from "../assets/enterprise.png";
-// import Security from "../assets/security.png";
-// import "./Ourpartners.css"
-
-// const OurPartners = () => {
-//   return (
-//     <>
-//     <div className="our-partners">
-//       <div className="our-partners-frame1">
-//         <div className="leftdevelop">
-//           <div className="subleftdevelop1">
-//             <h1>
-//               Why Delegate to<br></br>
-//               <span className="servicesdevelop">Us?</span>
-//             </h1>
-//           </div>
-//           <div className="ourpartners-text">
-//             We are a core tech company passionate about the research and
-//             development of technology solutions that transform businesses and
-//             people’s work styles.We are a core tech company passionate about the
-//             research andWe are a core tech company passionate about the research
-//             and development of technology solutions that transform businesses
-//             and people’s work styles.We are a core tech company passionate about
-//             the research and
-//           </div>
-//           <div className="figma2001">
-//             <span className="dot1">
-//               4 + <br></br>Total Networks
-//             </span>
-//             <span className="dot2">
-//               4 + <br></br>Total Networks
-//             </span>
-//             <span className="dot3">
-//               4 + <br></br>Total Networks
-//             </span>
-//             <span className="dot4">
-//               4 + <br></br>Total Networks
-//             </span>
-//             <span className="dot5">
-//               4 + <br></br>Total Networks
-//             </span>
-//             <span className="dot6"></span>
-//             <span className="dot7"></span>
-//             <span className="dot8"></span>
-//             <span className="dot9"></span>
-//             <span className="dot10"></span>
-//           </div>
-//         </div>
-//         <div className="RightDevelop">
-//           <div className="ourpartners-card flex-col">
-//             <div className="eng-dot">
-//               <img src={Enginnering} alt="engineering-icon" />
-//             </div>
-//             <h1>Engineering</h1>
-//             <div>
-//               Akash Network, the world’s first decentralized and open-source
-//               cloud, accelerates deployment, scaleAkash Network.
-//             </div>
-//           </div>
-//           <div className="ourpartners-card flex-col">
-//             <div className="eng-dot">
-//               <img src={Infrastructure} alt="Infrastructure-icon" />
-//             </div>
-//             <h1>Infrastructure</h1>
-//             <div>
-//               Akash Network, the world’s first decentralized and open-source
-//               cloud, accelerates deployment, scaleAkash Network.
-//             </div>
-//           </div>
-//           <div className="ourpartners-card flex-col">
-//             <div className="eng-dot">
-//               <img src={Security} alt="security-icon" />
-//             </div>
-//             <h1>Security, Monitoring & Alerting</h1>
-//             <div>
-//               Akash Network, the world’s first decentralized and open-source
-//               cloud, accelerates deployment, scaleAkash Network.`
-//             </div>
-//           </div>
-//           <div className="ourpartners-card flex-col">
-//             <div className="eng-dot">
-//               <img src={Enterprise} alt="enterprise-icon" />
-//             </div>
-//             <h1>Enterprise-grade infrastructure</h1>
-//             <div>
-//               Akash Network, the world’s first decentralized and open-source
-//               cloud, accelerates deployment, scaleAkash Network.
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//     </>
-//   );
-// };
-
-// export default OurPartners;
-
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Ourpartners.css";
 import { Alert, Space } from "antd";
 import Security from "../assets/security.png";
 const OurPartners = () => {
+  const [typedText, setTypedText] = useState("");
+  const [typedText2, setTypedText2] = useState("");
+
+  const textsToType = ["Why Delegate to", "Us ?"];
+
+  useEffect(() => {
+    let textIndex = 0;
+    let charIndex = 0;
+
+    const typingInterval = setInterval(() => {
+      if (textsToType[textIndex].length === charIndex && textIndex === 1) {
+        clearInterval(typingInterval);
+      } else if (textIndex === 0 && charIndex === textsToType[0].length) {
+        charIndex = 0;
+        textIndex++;
+      } else if (textIndex === 1) {
+        charIndex++;
+        setTypedText2(textsToType[1].slice(0, charIndex));
+      } else {
+        charIndex++;
+        setTypedText(textsToType[0].slice(0, charIndex));
+      }
+    }, 200);
+    return () => clearInterval(typingInterval);
+  }, []);
   return (
     <>
       <div className="main22-ourpartners">
@@ -113,8 +37,9 @@ const OurPartners = () => {
           <div className="leftdevelop-partners">
             <div className="subleftdevelop1-partners">
               <h1>
-                Why Delegate to<br></br>
-                <span className="servicesdevelop">Us ?</span>
+                {typedText}
+                <br></br>
+                <span className="servicesdevelop">{typedText2}</span>
               </h1>
             </div>
             <div className="ourpartners-text">
@@ -174,9 +99,7 @@ const OurPartners = () => {
                             src={Security}
                             alt="Alert Image"
                           />
-                          <span className="head-text">
-                            Infrastructure
-                          </span>
+                          <span className="head-text">Infrastructure</span>
                         </div>
                       }
                       description={
@@ -186,7 +109,7 @@ const OurPartners = () => {
                           Network.
                         </span>
                       }
-                      style={{marginLeft: "70%"}}
+                      style={{ marginLeft: "70%" }}
                     />
 
                     <Alert
@@ -210,7 +133,7 @@ const OurPartners = () => {
                           Network.
                         </span>
                       }
-                      style={{marginLeft: "70%"}}
+                      style={{ marginLeft: "70%" }}
                     />
                   </div>
 
@@ -224,9 +147,7 @@ const OurPartners = () => {
                             src={Security}
                             alt="Alert Image"
                           />
-                          <span className="head-text">
-                            Engineering
-                          </span>
+                          <span className="head-text">Engineering</span>
                         </div>
                       }
                       description={
@@ -236,7 +157,7 @@ const OurPartners = () => {
                           Network.
                         </span>
                       }
-                      style={{marginLeft: "62%"}}
+                      style={{ marginLeft: "62%" }}
                     />
                     <Alert
                       className="alert2004"
@@ -260,7 +181,7 @@ const OurPartners = () => {
                           Network.
                         </span>
                       }
-                      style={{marginLeft: "62%"}}
+                      style={{ marginLeft: "62%" }}
                     />
                   </div>
                 </div>

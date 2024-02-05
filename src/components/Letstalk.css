@@ -6,7 +6,6 @@
 }
 .letstalk-head {
   justify-content: space-between;
- 
 }
 
 .letstalk-para-text {
@@ -21,7 +20,6 @@
 }
 .letstalk-form {
   display: flex;
-  
 }
 .talk-text {
   background: linear-gradient(169deg, #6458e7 26.53%, #9760f4 55.47%);
@@ -79,6 +77,13 @@
   gap: 10px;
   border-radius: 16px;
   background: linear-gradient(180deg, #2f50da 0%, #a562f7 100%);
+  color: #fff;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.64px;
 }
 .text-field-bg {
   border: 1px solid rgba(255, 255, 255, 0.2);

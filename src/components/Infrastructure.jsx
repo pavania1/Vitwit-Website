@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Infrastructure.css";
 import { Alert } from "antd";
-import Security from "../assets/security.png";
 
 import Cosmos from "../assets/infra-icons/comos-infra.png";
 import Polygen from "../assets/infra-icons/polygon-infra.png";
@@ -18,14 +17,39 @@ import Mainnet from "../assets/mainnet.svg";
 import Devops from "../assets/devops.svg";
 import WhiteLabelinfra from "../assets/whitelabelinfra.svg";
 const Infrastructure = () => {
+  const [typedText, setTypedText] = useState("");
+  const [typedText2, setTypedText2] = useState("");
+
+  const textsToType = ["Infrastructure", "Services"];
+
+  useEffect(() => {
+    let textIndex = 0;
+    let charIndex = 0;
+
+    const typingInterval = setInterval(() => {
+      if (textsToType[textIndex].length === charIndex && textIndex === 1) {
+        clearInterval(typingInterval);
+      } else if (textIndex === 0 && charIndex === textsToType[0].length) {
+        charIndex = 0;
+        textIndex++;
+      } else if (textIndex === 1) {
+        charIndex++;
+        setTypedText2(textsToType[1].slice(0, charIndex));
+      } else {
+        charIndex++;
+        setTypedText(textsToType[0].slice(0, charIndex));
+      }
+    }, 200);
+    return () => clearInterval(typingInterval);
+  }, []);
   return (
     <>
       <div className="infrastructure">
         <div className="infrastructure-main-head">
           <div className="infrastructure-services-h1">
             <h1>
-              Infrasturcture &nbsp;
-              <span className="infrastructure-services">Services</span>
+              {typedText} &nbsp;
+              <span className="infrastructure-services">{typedText2}</span>
             </h1>
           </div>
 

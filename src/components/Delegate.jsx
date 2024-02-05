@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Delegate.css";
 import Akash from "../assets/partners/akash.svg";
 import Regen from "../assets/partners/regen.svg";
@@ -9,6 +9,31 @@ import Person from "../assets/person.svg";
 import Twitter from "../assets/partnerstwitter.svg";
 import Favorite from "../assets/favorite.svg";
 const Delegate = () => {
+  const [typedText, setTypedText] = useState("");
+  const [typedText2, setTypedText2] = useState("");
+
+  const textsToType = ["Our", "Partners"];
+
+  useEffect(() => {
+    let textIndex = 0;
+    let charIndex = 0;
+
+    const typingInterval = setInterval(() => {
+      if (textsToType[textIndex].length === charIndex && textIndex === 1) {
+        clearInterval(typingInterval);
+      } else if (textIndex === 0 && charIndex === textsToType[0].length) {
+        charIndex = 0;
+        textIndex++;
+      } else if (textIndex === 1) {
+        charIndex++;
+        setTypedText2(textsToType[1].slice(0, charIndex));
+      } else {
+        charIndex++;
+        setTypedText(textsToType[0].slice(0, charIndex));
+      }
+    }, 200);
+    return () => clearInterval(typingInterval);
+  }, []);
   return (
     <>
       <div className="main-delegate">
@@ -16,8 +41,8 @@ const Delegate = () => {
           <div className="delegate-main-head">
             <div className="subleftdevelop1-delegate">
               <h1>
-                Our &nbsp;
-                <span className="servicesdevelop">Partners</span>
+                {typedText} &nbsp;
+                <span className="servicesdevelop">{typedText2}</span>
               </h1>
             </div>
             <div className="delegate-text-delegate">
@@ -63,9 +88,7 @@ const Delegate = () => {
                         <img src={Person} alt="Person Image" />
                         <div className="">
                           <div className="Jack-Zampolin ">Jack-Zampolin </div>
-                          <span style={{ color: "white", fontWeight: "500" }}>
-                            @Jackk_1234
-                          </span>
+                          <span className="Jackk_1234">@Jackk_1234</span>
                         </div>
                       </div>
                       <img src={Twitter} alt="Twitter" />
@@ -73,7 +96,7 @@ const Delegate = () => {
                   }
                   description={
                     <div className="">
-                      <span style={{ color: "white" }}>
+                      <span className="twitter-text">
                         The @vitwit_team has been rocking it and contributing to
                         all layers of the stack: #tendermint, #cosmossdk, and
                         #ibc. Mad props, and look forward to continuing to work
@@ -82,9 +105,9 @@ const Delegate = () => {
                       <div className="flex justify-between">
                         <div className="flex">
                           <img src={Favorite} alt="Favorite-icon" />
-                          <p>12</p>
+                          <p className="date-text">12</p>
                         </div>
-                        <div>04 Dec 2023</div>
+                        <div className="date-text">04 Dec 2023</div>
                       </div>
                     </div>
                   }
@@ -97,9 +120,7 @@ const Delegate = () => {
                         <img src={Person} alt="Person Image" />
                         <div className="">
                           <div className="Jack-Zampolin ">Jack-Zampolin </div>
-                          <span style={{ color: "white", fontWeight: "500" }}>
-                            @Jackk_1234
-                          </span>
+                          <span className="Jackk_1234">@Jackk_1234</span>
                         </div>
                       </div>
                       <img src={Twitter} alt="Twitter" />
@@ -107,14 +128,14 @@ const Delegate = () => {
                   }
                   description={
                     <div className="">
-                      <span style={{ color: "white" }}>
+                      <span className="twitter-text">
                         The @vitwit_team has been rocking it and contributing to
                         all layers of the stack: #tendermint, #cosmossdk, and
                         #ibc. Mad props, and look forward to continuing to work
                         with y'all!
                       </span>
                       <p>
-                        <span style={{ color: "white" }}>
+                        <span className="twitter-text">
                           The @vitwit_team has been rocking it and contributing
                           to all layers of the stack: #tendermint, #cosmossdk,
                           and #ibc. Mad props, and look forward to continuing to
@@ -122,7 +143,7 @@ const Delegate = () => {
                         </span>
                       </p>
                       <p>
-                        <span style={{ color: "white" }}>
+                        <span className="twitter-text">
                           The @vitwit_team has been rocking it and contributing
                           to all layers of the stack: #tendermint, #cosmossdk,
                           and #ibc. Mad props, and look forward to continuing to
@@ -132,9 +153,9 @@ const Delegate = () => {
                       <div className="flex justify-between">
                         <div className="flex">
                           <img src={Favorite} alt="Favorite-icon" />
-                          <p>12</p>
+                          <p className="date-text">12</p>
                         </div>
-                        <div>04 Dec 2023</div>
+                        <div className="date-text">04 Dec 2023</div>
                       </div>
                     </div>
                   }
@@ -147,9 +168,7 @@ const Delegate = () => {
                         <img src={Person} alt="Person Image" />
                         <div className="">
                           <div className="Jack-Zampolin ">Jack-Zampolin </div>
-                          <span style={{ color: "white", fontWeight: "500" }}>
-                            @Jackk_1234
-                          </span>
+                          <span className="Jackk_1234">@Jackk_1234</span>
                         </div>
                       </div>
                       <img src={Twitter} alt="Twitter" />
@@ -157,7 +176,7 @@ const Delegate = () => {
                   }
                   description={
                     <div className="">
-                      <span style={{ color: "white" }}>
+                      <span className="twitter-text">
                         The @vitwit_team has been rocking it and contributing to
                         all layers of the stack: #tendermint, #cosmossdk, and
                         #ibc. Mad props, and look forward to continuing to work
@@ -166,9 +185,9 @@ const Delegate = () => {
                       <div className="flex justify-between">
                         <div className="flex">
                           <img src={Favorite} alt="Favorite-icon" />
-                          <p>12</p>
+                          <p className="date-text">12</p>
                         </div>
-                        <div>04 Dec 2023</div>
+                        <div className="date-text">04 Dec 2023</div>
                       </div>
                     </div>
                   }
