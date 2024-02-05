@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import VitwitLogo from "../assets/vitwit-logo.png";
 import HamburgerIcon from "./HamburgerIcon";
 import CloseIcon from "./CloseIcon";
+import "./Navbar.css"
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);

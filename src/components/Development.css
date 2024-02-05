@@ -5,13 +5,6 @@
 }
 .main22-infra {
   width: 100%;
-  background: linear-gradient(
-    91deg,
-    #280a33 0.63%,
-    #000 49.91%,
-    #000 62.74%,
-    #2d2753 99.19%
-  );
   display: flex;
   padding: 80px 0px;
   flex-direction: column;
@@ -241,3 +234,80 @@
 .circles-infra {
   margin-right: -15%;
 }
+.development-alert-head {
+  color: #fff;
+  font-family: "Libre Franklin";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 120% */
+}
+.development-alert-text {
+  color: #fff;
+  font-family: "Libre Franklin";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+}
+
+/* .total-networks-text {
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto Flex";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; 
+  letter-spacing: 0.8px;
+}
+.four-text {
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto Flex";
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: 2.16px;
+}
+.four-text-dot2 {
+  font-size: 34px;
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto Flex";
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px; 
+  letter-spacing: 1.36px;
+  
+}
+.plus-text-dot2 {
+  color: rgba(255, 255, 255, 0.4);
+  font-family: "Roboto Flex";
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: 1.36px;
+}
+.plus-text {
+  color: rgba(255, 255, 255, 0.4);
+  font-family: "Roboto Flex";
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: 2.16px;
+}
+.total-networks-dot2 {
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto Flex";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; 
+  letter-spacing: 0.56px;
+} */

@@ -53,15 +53,15 @@ const Development = () => {
                 <Alert
                   className="alert2001-infra"
                   message={
-                    <span style={{ color: "white", fontWeight: "500" }}>
+                    <span className="development-alert-head">
                       Cosmos Blockchain Development
                     </span>
                   }
                   description={
-                    <span style={{ color: "white" }}>
+                    <span className="development-alert-text">
                       Akash Network, the world’s first decentralized and
-                      open-source cloud, accelerates deployment, scaleAkash
-                      Network.
+                      open-source cloud, accelerates <br />
+                      deployment, scaleAkash Network.
                     </span>
                   }
                   style={{
@@ -74,15 +74,15 @@ const Development = () => {
                 <Alert
                   className="alert2001-infra"
                   message={
-                    <span style={{ color: "white", fontWeight: "500" }}>
+                    <span className="development-alert-head">
                       Blockchain Auditing
                     </span>
                   }
                   description={
-                    <span style={{ color: "white" }}>
+                    <span className="development-alert-text">
                       Akash Network, the world’s first decentralized and
-                      open-source cloud, accelerates deployment, scaleAkash
-                      Network.
+                      open-source cloud, accelerates <br /> deployment,
+                      scaleAkash Network.
                     </span>
                   }
                   style={{ padding: 15, marginBottom: "10px", width: "100%" }}
@@ -90,15 +90,13 @@ const Development = () => {
                 <Alert
                   className="alert2001-infra"
                   message={
-                    <span style={{ color: "white", fontWeight: "500" }}>
-                      IBC Apps
-                    </span>
+                    <span className="development-alert-head">IBC Apps</span>
                   }
                   description={
-                    <span style={{ color: "white" }}>
+                    <span className="development-alert-text">
                       Akash Network, the world’s first decentralized and
-                      open-source cloud, accelerates deployment, scaleAkash
-                      Network.
+                      open-source cloud, accelerates <br />
+                      deployment, scaleAkash Network.
                     </span>
                   }
                   style={{ padding: 15, marginBottom: "10px", width: "100%" }}
@@ -106,15 +104,15 @@ const Development = () => {
                 <Alert
                   className="alert2001-infra"
                   message={
-                    <span style={{ color: "white", fontWeight: "500" }}>
+                    <span className="development-alert-head">
                       COSM WASM Smart Contracts
                     </span>
                   }
                   description={
-                    <span style={{ color: "white" }}>
+                    <span className="development-alert-text">
                       Akash Network, the world’s first decentralized and
-                      open-source cloud, accelerates deployment, scaleAkash
-                      Network.
+                      open-source cloud, accelerates <br />
+                      deployment, scaleAkash Network.
                     </span>
                   }
                   style={{ padding: 15, marginBottom: "10px", width: "100%" }}
@@ -127,7 +125,7 @@ const Development = () => {
           {/* RightDevelop cantioner start */}
           <div className="RightDevelop-infra">
             <div>
-              <p>
+              <p className="development-alert-text">
                 We are a core tech company passionate about the research and
                 development of technology solutions that transform businesses
                 and people’s work styles.We are a core tech company passionate

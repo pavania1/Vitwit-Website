@@ -192,7 +192,7 @@ const OurPartners = () => {
         </div>
         {/* maindevelop cantioner end */}
       </div>
-      <br></br>
+      
     </>
   );
 };
